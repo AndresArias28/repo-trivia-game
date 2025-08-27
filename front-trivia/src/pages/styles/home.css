@@ -1,0 +1,45 @@
+/* Fondo del lado izquierdo */
+.select-role-bg {
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+/* Imagen decorativa del lado derecho */
+.role-image-bg {
+  background-image: url('https://previews.123rf.com/images/studiom1/studiom11507/studiom1150700255/42356051-questions-seamless-pattern-vector-illustration-can-be-used-for-wallpaper-web-page-background.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+/* Botones estilizados */
+button.btn {
+  border-radius: 12px;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+}
+
+.img-hover-rotate {
+  width: 300px;
+  height: 300px;
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer; /* opcional, para dar feedback al usuario */
+}
+
+.img-hover-rotate:hover {
+  transform: rotate(360deg);
+}
+
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .d-flex.vh-100 {
+    flex-direction: column;
+  }
+  .w-50 {
+    width: 100% !important;
+  }
+  .role-image-bg {
+    height: 200px;
+  }
+}

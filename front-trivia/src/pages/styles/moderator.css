@@ -1,0 +1,79 @@
+body {
+  background-color: #f3f6fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fondo general con imagen */
+.moderator-wrapper {
+  min-height: 100vh;
+  background-color: #0d1117;
+  /* background-image: url('https://previews.123rf.com/images/studiom1/studiom11507/studiom1150700255/42356051-questions-seamless-pattern-vector-illustration-can-be-used-for-wallpaper-web-page-background.jpg'); */
+  background-size: 250px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+/* Banner */
+.moderator-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #7209b7, #3a0ca3);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.moderator-card {
+  background-color: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+h2, h3, h4 {
+  color: #2c3e50;
+}
+
+input.form-control {
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  border: none;
+}
+input::placeholder {
+  color: #ccc;
+}
+
+button.btn {
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.input-group-text {
+  background-color: #fff;
+  border-left: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+button.btn-primary {
+  background-color: #1e90ff;
+  border: none;
+}
+
+button.btn-primary:hover {
+  background-color: #187bcd;
+}
+input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  background-color: rgba(255,255,255,0.2);
+}

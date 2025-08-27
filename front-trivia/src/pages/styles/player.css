@@ -1,0 +1,79 @@
+body {
+  background-color: #f5f7fa;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+} 
+
+.app-background {
+  min-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1665789318391-6057c533005e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  
+}
+
+.game-card, .join-card {
+  background-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  max-width: 520px;
+  width: 100%;
+}
+
+.join-card:hover,
+.game-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Glass effect solo para esta card */
+.card.join-card {
+  background-color: rgba(255, 255, 255, 0.14) !important; /* transparencia real */
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 18px;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.18);
+}
+
+/* Inputs dentro de la card: un poco translúcidos también */
+.card.join-card .form-control {
+  background-color: rgba(255, 255, 255, 0.72);
+  color: #111;                 /* ya usas text-dark, esto asegura contraste */
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.card.join-card .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
+
+
+h2,
+h4 {
+  color: #2c3e50;
+}
+
+input.form-control {
+  border-radius: 8px;
+}
+
+button.btn {
+  border-radius: 8px;
+}
+.badge {
+  padding: 0.5em 0.75em;
+}
+
+.text-danger {
+  font-size: 1.2rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
